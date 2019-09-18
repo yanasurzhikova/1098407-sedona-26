@@ -19,6 +19,61 @@
       </nav>
     </header>
     <main>
+      <section class="filters">
+        <form class="filter-form" method="get"action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul class="filters-list">
+              <li class="filters-item">
+                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">
+                 Бассейн
+                </label>
+              </li>
+              <li class="filters-item">
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">
+                Паркинг
+                </label>
+              </li>
+              <li class="filters-item">
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">
+                 Wi-fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+           <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul class="filters-list">
+              <li class="filters-item">
+                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">
+                 Гостиница
+                </label>
+              </li>
+              <li class="filters-item">
+                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">
+                Мотель
+                </label>
+              </li>
+              <li class="filters-item">
+                <input type="checkbox" name="apartment" id="filter-apartment" checked>
+                <label for="filter-apartment">
+                 Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <input type="range">
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
       <section class="hotels">
         <ul>
           <li>
