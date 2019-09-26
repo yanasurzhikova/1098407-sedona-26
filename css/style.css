@@ -2,16 +2,19 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   color: #778899;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.container {
+ width: 1200px;
+ background-color: #fff;
+ margin: 0 auto;
 }
 
   a {
@@ -22,18 +25,339 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-
+  text-transform: uppercase;
   background-color: #ffffff;
+  font-weight: bold;
 }
 
- .site-navigation {
+ .site-navigation,
+ .hotels-list,.advantages-list,
+ .feature-list,.social,
+ .sort-list {
   list-style: none;
 }
- .site-navigation a {
+ .site-navigation-link {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,{
-  background-color: #242424;
+.site-navigation-link:hover {
+  color: #81b3d2;
+}
+
+.site-navigation-link:focus {
+  color: rgba(0,0,0,0.3);
+}
+
+.site-navigation-item.current {
+  color: #766357;
+}
+
+.promo {
+  background-color: #deebf4;
+  background-image: url("../img/bg_promo.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 505px;
+  padding: 32px 0 61px;
+}
+
+ .title-main {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ .advantages-title {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+.advantages-item {
+}
+
+.advantages-item-title{
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.advantages-item-desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+
+}
+
+.advantages-item-number {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.advantages-item-dual {
+  text-transform: uppercase;
+
+}
+
+.dual-block-text {
+  background-color: #81b3d2;
+}
+
+
+.dual-block-text .advantages-item-title,
+.dual-block-text .advantages-item-desc,
+.dual-block-text .advantages-item-number {
+  color: #ffffff;
+
+}
+
+
+.feature-item-title {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.feature-item-desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.booking-text {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button_searсh {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #766357;
+  width: 575px;
+  height: 83px;
+}
+
+.booking-title {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: normal;
+  text-transform: uppercase;
+
+}
+
+.map {
+ background-image: url(../img/map_sedona.jpg);
+ height: 469px;
+ background-size: contain;
+ background-repeat: no-repeat;
+
+}
+
+
+fieldset {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-footer {
+ /*background-repeat: repeat;*/
+
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.social-icon {
+  background-color: #81b3d2;
+  width: 48px;
+  height: 48px;
+
+}
+
+.author {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.academy {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+  text-transform: none;
+
+}
+
+.filters-item {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+
+}
+
+.filters-legend {
+   font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filters {
+  background-color: #6c98bf;
+  background-image: url("../img/bg_filters.jpg");
+  background-size: cover;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  height: 216px;
+  padding: 30px 0;
+  width: 1200px;
+}
+
+.button-filters {
+ font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+  /*background-color: #766357;*/
+  /*background-image: url("../img/bg_filters.jpg");*/
+  width: 133px;
+  height: 35px;
+}
+
+.hotels-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hotels-title-sort {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.sort-list-item-1 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.sort-list-item-2 {
+  font-size: 12px;
+  line-height: 18px;
+  /*color: #как посмотреть;*/
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.sort-list-item-3 {
+  font-size: 12px;
+  line-height: 18px;
+  /*color: #как посмотреть;*/
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/*.button {
+  font: inherit;
+  text-align: center;
+
+}*/
+
+.hotels-item-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hotels-item-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: normal;
+  text-transform: uppercase;
+
+}
+
+.hotels-item-link {
+  color: #000000;
+}
+
+.button-detailed {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  width: 108px;
+  height: 27px;
+}
+.button-booking {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #766357;
+  width: 141px;
+  height: 27px;
+}
+
+.rating-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
 }
