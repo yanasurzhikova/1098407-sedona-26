@@ -83,31 +83,31 @@
             </section>
             <section class="booking">
                 <p class="booking-text">Заинтересовались?</p>
-                <h3 class="booking-title">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="button_searсh" type="button">Поиск гостиницы в Седоне</button>
-                <form action="hotel_booking" method="post" action="https://echo.htmlacademy.ru">
-                    <fieldset>
+                <h3 class="booking-title">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</h3>
+                <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+                <form class="booking-form"action="hotel_booking" method="post" action="https://echo.htmlacademy.ru">
+                    <fieldset class="booking-form-wrap">
                         <div>
                             <label for="hotel_booking_date_of_arrival" class="booking-label">Дата заезда:</label>
                             <div>
-                                <input id="hotel_booking_date_of_arrival" type="text" name="date_of_arrival" value="24 апреля 2017">
+                                <input class="booking-form-input" id="hotel_booking_date_of_arrival" type="text" name="date_of_arrival" value="24 апреля 2017">
                                 <span class="icon-calendar"></span>
                             </div>
                         </div>
                         <div>
                             <label for="hotel_booking_date of departure" class="booking-label">Дата выезда:</label>
                             <div>
-                                <input id="hotel_booking_date of departure" type="text" name="date of departure" value="4 июля 2017">
+                                <input class="booking-form-input" id="hotel_booking_date of departure" type="text" name="date of departure" value="4 июля 2017">
                                 <span class="icon-calendar"></span>
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="booking-form">
                         <div>
                             <label for="hotel_booking_adults" class="booking-label">Взрослые:</label>
                             <div>
                                 <button>-</button>
-                                <input id="hotel_booking_adults" type="text" name="adults" value="2">
+                                <input class="booking-form-input" id="hotel_booking_adults" type="text" name="adults" value="2">
                                 <button>+</button>
                             </div>
                         </div>
@@ -115,12 +115,12 @@
                             <label for="hotel_booking_children" class="booking-label">Дети:</label>
                             <div>
                                 <button>-</button>
-                                <input id="hotel_booking_children" type="text" name="children" value="0">
+                                <input class="booking-form-input" id="hotel_booking_children" type="text" name="children" value="0">
                                 <button>+</button>
                             </div>
                         </div>
                     </fieldset>
-                    <button type="submit">Найти</button>
+                    <button class="booking-form-button" type="submit">Найти</button>
                 </form>
             </section>
             <section class="map">
