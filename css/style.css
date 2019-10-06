@@ -29,7 +29,7 @@ body {
 }
 
  .site-navigation,
- .hotels-list,.advantages-list,
+ .hotels-list,
  .feature-list,.social,
  .sort-list {
   list-style: none;
@@ -111,10 +111,6 @@ body {
 
 }
 
-.dual-block-text {
-  background-color: #81b3d2;
-}
-
 
 .dual-block-text .advantages-item-title,
 .dual-block-text .advantages-item-desc,
@@ -146,6 +142,8 @@ body {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+
 }
 
 .button-search {
@@ -155,8 +153,10 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #766357;
-  width: 575px;
+  width: 569px;
   min-height: 83px;
+  margin: 0 auto;
+  display: block;
 }
 
 .booking-title {
@@ -165,13 +165,14 @@ body {
   color: #333333;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
 
 }
 
 .map {
  background-image: url(../img/map_sedona.jpg);
  height: 469px;
- background-size: contain;
+ background-size: cover;
  background-repeat: no-repeat;
 
 }
@@ -453,4 +454,249 @@ body {
 .social-icon:active {
 background-color: #5496bd;
 /*как изменить цвет внутри иконки на картинке*/
+}
+
+.promo-pic {
+text-align: center;
+}
+
+
+/*СЕТКИ*/
+
+
+.main-header {
+  margin-bottom: -14px;
+
+  /* Временно для сетки */
+  min-height: 55px;
+}
+
+.main-navigation {
+
+  align-items: center;
+  /*flex-direction: row;  нужно ли это и какое значние должно быть?*/
+  /* Временно для
+   сетки */
+  min-height: 55px;
+  /*background-color: transparent; это нужно?*/
+  position: relative;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 72px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+   /*Временно для сетки */
+  /*display: block;*/
+
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Временно для сетки */
+  min-height: 55px;
+}
+
+.site-navigation-item {
+    text-align: left;
+}
+.dual-block-pic{
+
+    width: 800px;
+    min-height: 255px;
+    background-size: cover;
+}
+
+.dual-block-text {
+    width: 400px;
+    min-height: 255px;
+    background-color: #81b3d2;
+    text-align: center;
+
+}
+
+
+
+.title-main,
+.advantages-title {
+  text-align: center;
+}
+
+.pic-right {
+    background-image: url(../img/bg_advantages_1.jpg);
+}
+
+.pic-left {
+  background-image: url(../img/bg_advantages_2.jpg);
+}
+
+.dual-block {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: stretch;
+  min-height: 182px;
+  margin-top: 60px;
+  margin-bottom: 87px;
+}
+
+.feature-icon-housе {
+    background-image: url(../img/icon-house.svg);
+    min-height: 70px;
+    width: 74px;
+    margin:0 auto;
+}
+
+.feature-icon-food {
+    background-image: url(../img/icon-food.svg);
+    min-height: 70px;
+    width: 74px;
+    margin:0 auto;
+
+}
+
+.feature-icon-souvenirs {
+  background-image: url(../img/icon-surprise.svg);
+    min-height: 76px;
+    width: 64px;
+    margin:0 auto;
+}
+
+/*.single-block {
+    display: block;
+}
+*/
+
+/*.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+*/
+/*.booking-form {
+    width: 565px;
+    min-height: 395px;
+}*/
+
+
+
+
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.advantages-item-single-block {
+width: 100%;
+min-height: 257px;
+background-color: #eeeeee;
+}
+
+.advantages-item-single-block {
+  width: calc(100% / 3);
+  text-align: center;
+  padding-top: 50px;
+ /* padding-bottom: 64px;*/
+ /* align-items: stretch;*/
+
+}
+
+.booking {
+    position: relative;
+}
+
+.booking-form {
+    padding: 55px;
+    width: 570px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+   background: #ffffff;
+   transform: translateX(-50%);
+
+
+
+ }
+
+ .booking-wrapper {
+ width: 345px;
+ margin-bottom: 29px;
+
+}
+
+.booking-form-input {
+  width: 100%;
+  min-height: 38px;
+  box-sizing: border-box;
+}
+
+.booking-form-input-short {
+    width: 113px;
+
+
+
+}
+
+.booking-form-wrap {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+}
+
+.booking-form-wrap-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.booking-form-wrap-people {
+    display: flex;
+    flex-direction: row;
+}
+
+.booking-label {
+   font-size: 14px;
+  line-height: auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social {
+  display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content:space-between;
 }

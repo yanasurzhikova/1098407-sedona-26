@@ -24,7 +24,9 @@
         </header>
         <main>
             <section class="promo">
-                <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону!">
+                <div class="promo-pic">
+                    <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону!">
+                </div>
             </section>
             <section class="advantages">
                 <h1 class="title-main">Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
@@ -37,25 +39,28 @@
                                     <span class="advantages-item-number">— №1 —</span>
                                     <p class="advantages-item-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                                 </div>
-                                <div class="dual-block-pic"></div>
+                                <div class="dual-block-pic pic-right"></div>
                             </section>
                             <ul class="feature-item">
                                 <li class="feature-list">
+                                    <div class="feature-icon-housе"></div>
                                     <h4 class="feature-item-title">Жильё</h4>
                                     <p class="feature-item-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                                 </li>
                                 <li class="feature-list">
+                                    <div class="feature-icon-food"></div>
                                     <h4 class="feature-item-title">Еда</h4>
                                     <p class="feature-item-desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                                 </li>
                                 <li class="feature-list">
+                                    <div class="feature-icon-souvenirs"></div>
                                     <h4 class="feature-item-title">Сувениры</h4>
                                     <p class="feature-item-desc">Не только китайского, но и местного производства!</p>
                                 </li>
                             </ul>
                         </li>
                         <li class="advantages-item dual-block">
-                            <div class="dual-block-pic">
+                            <div class="dual-block-pic pic-left">
                             </div>
                             <div class="dual-block-text">
                                 <h3 class="advantages-item-title">Там есть Мост дьявола</h3>
@@ -64,17 +69,17 @@
                             </div>
 
                         </li>
-                        <li class="advantages-item">
+                        <li class="advantages-item advantages-item-single-block">
                             <h3 class="advantages-item-title">Небольшая площадь</h3>
                             <span class="advantages-item-number">— №3 —</span>
                             <p class="advantages-item-desc">Все достопримечательности находятся очень близко</p>
                         </li>
-                        <li class="advantages-item">
+                        <li class="advantages-item advantages-item-single-block">
                             <h3 class="advantages-item-title">Красивая дорога</h3>
                             <span class="advantages-item-number">— №4 —</span>
                             <p class="advantages-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                         </li>
-                        <li class="advantages-item">
+                        <li class="advantages-item advantages-item-single-block">
                             <h3 class="advantages-item-title">Мало туристов</h3>
                             <span class="advantages-item-number">— №5 —</span>
                             <p class="advantages-item-desc">Большинство едет в гранд каньон и толпится там</p>
@@ -85,41 +90,41 @@
                 <p class="booking-text">Заинтересовались?</p>
                 <h3 class="booking-title">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</h3>
                 <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
-                <form class="booking-form"action="hotel_booking" method="post" action="https://echo.htmlacademy.ru">
-                    <fieldset class="booking-form-wrap">
-                        <div>
-                            <label for="hotel_booking_date_of_arrival" class="booking-label">Дата заезда:</label>
-                            <div>
-                                <input class="booking-form-input" id="hotel_booking_date_of_arrival" type="text" name="date_of_arrival" value="24 апреля 2017">
-                                <span class="icon-calendar"></span>
-                            </div>
+                <form class="booking-form" action="hotel_booking" method="post" action="https://echo.htmlacademy.ru">
+
+                    <div class="booking-form-wrap-date">
+                        <label for="hotel_booking_date_of_arrival" class="booking-label">Дата заезда:</label>
+                        <div class="booking-wrapper">
+                            <input class="booking-form-input" id="hotel_booking_date_of_arrival" type="text" name="date_of_arrival" value="24 апреля 2017">
+                            <span class="icon-calendar"></span>
                         </div>
-                        <div>
-                            <label for="hotel_booking_date of departure" class="booking-label">Дата выезда:</label>
-                            <div>
-                                <input class="booking-form-input" id="hotel_booking_date of departure" type="text" name="date of departure" value="4 июля 2017">
-                                <span class="icon-calendar"></span>
-                            </div>
+                    </div>
+                    <div class="booking-form-wrap-date">
+                        <label for="hotel_booking_date of departure" class="booking-label">Дата выезда:</label>
+                        <div class="booking-wrapper">
+                            <input class="booking-form-input" id="hotel_booking_date of departure" type="text" name="date of departure" value="4 июля 2017">
+                            <span class="icon-calendar"></span>
                         </div>
-                    </fieldset>
-                    <fieldset class="booking-form">
-                        <div>
+                    </div>
+
+                    <div class="booking-form-wrap">
+                        <div class="booking-form-wrap-people">
                             <label for="hotel_booking_adults" class="booking-label">Взрослые:</label>
                             <div>
                                 <button>-</button>
-                                <input class="booking-form-input" id="hotel_booking_adults" type="text" name="adults" value="2">
+                                <input class="booking-form-input booking-form-input-short" id="hotel_booking_adults" type="text" name="adults" value="2">
                                 <button>+</button>
                             </div>
                         </div>
-                        <div>
+                        <div class="booking-form-wrap-people">
                             <label for="hotel_booking_children" class="booking-label">Дети:</label>
                             <div>
                                 <button>-</button>
-                                <input class="booking-form-input" id="hotel_booking_children" type="text" name="children" value="0">
+                                <input class="booking-form-input booking-form-input-short" id="hotel_booking_children" type="text" name="children" value="0">
                                 <button>+</button>
                             </div>
                         </div>
-                    </fieldset>
+                    </div>
                     <button class="booking-form-button" type="submit">Найти</button>
                 </form>
             </section>
