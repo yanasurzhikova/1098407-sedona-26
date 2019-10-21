@@ -71,36 +71,50 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend class="filters-legend">Стоимость в сутки (Р):</legend>
-                        <input type="range">
-                    </fieldset>
-                    <button class="button-filters" type="submit">Показать</button>
+                    <div class="filter-range">
+                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                        <div class="price-controls">
+                            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                        </div>
+                        <div class="range-controls">
+                            <div class="scale">
+                            <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
+                    </div>
+
                 </form>
             </section>
             <section class="hotels">
-                <h2 class="hotels-title">Найдено: 3</h2>
-                <h3 class="hotels-title-sort">Сортировка:</h3>
-                <ul class="sort-list">
-                    <li class="sort-list-item">
-                        <a class="sort-list-item-link current" href="#" >По цене</a>
-                    </li>
-                    <li class="sort-list-item">
-                        <a class="sort-list-item-link" href="#">По типу</a>
-                    </li>
-                    <li class="sort-list-item">
-                        <a class="sort-list-item-link" href="#">По рейтингу</a>
-                    </li>
-                </ul>
-                <ul class="filter-triangle">
-                    <li class="triangle triangle gray"><a href="#"></a></li>
-                    <li class="triangle triangle blue"><a href="#"></a></li>
-                </ul>
+                 <div class="search-result">
+                    <h2 class="hotels-title">Найдено: 3</h2>
+                    <p class="hotels-title-sort">Сортировка:</p>
+
+                    <ul class="sort-list">
+                        <li class="sort-list-item">
+                            <a class="sort-list-item-link current" href="#" >По цене</a>
+                        </li>
+                        <li class="sort-list-item">
+                            <a class="sort-list-item-link" href="#">По типу</a>
+                        </li>
+                        <li class="sort-list-item">
+                            <a class="sort-list-item-link" href="#">По рейтингу</a>
+                        </li>
+                    </ul>
+                    <ul class="sort">
+                        <li class="sort-up"><a href="#"></a></li>
+                        <li class="sort-down"><a href="#"></a></li>
+                    </ul>
+                </div>
 
                 <ul class="hotels-list">
                     <li class="hotels-list-item">
                         <img src="img/pic_hotels_1.jpg" width="135" height="90" alt="фото отеля Amara Resort & Spa">
-                        <div>
+                        <div class="hotels-list-desc">
                             <h2 class="hotels-item-title">
                                 <a class="hotels-item-link" href="amara-resort.html">Amara Resort & Spa</a>
                             </h2>
@@ -108,7 +122,7 @@
                                 <span>гостиница</span>
                                 <span>От 4000 Р.</span>
                             </p>
-                            <p>
+                            <p class="button-block">
                                 <a class="button-detailed" href="#">подробнее</a>
                                 <a class="button-booking" href="#">забронировать</a>
                             </p>
@@ -120,7 +134,7 @@
                     </li>
                     <li class="hotels-list-item">
                         <img src="img/pic_hotels_2.jpg" width="135" height="90" alt="фото отеля Amara Resort & Spa">
-                        <div>
+                        <div class="hotels-list-desc">
                             <h2 class="hotels-item-title">
                                 <a class="hotels-item-link" href="desert-quail.html">Desert Quail Inn</a>
                             </h2>
@@ -128,7 +142,7 @@
                                 <span>мотель</span>
                                 <span>От 3000 Р.</span>
                             </p>
-                            <p>
+                            <p class="button-block">
                                 <a class="button-detailed" href="#">подробнее</a>
                                 <a class="button-booking" href="#">забронировать</a>
                             </p>
@@ -140,7 +154,7 @@
                     </li>
                     <li class="hotels-list-item">
                         <img src="img/pic_hotels_3.jpg" width="135" height="90" alt="фото отеля Villas at Poco Diablo">
-                        <div>
+                        <div class="hotels-list-desc">
                             <h2 class="hotels-item-title">
                                 <a class="hotels-item-link" href="villas-diablo.html">Villas at Poco Diablo</a>
                             </h2>
@@ -148,7 +162,7 @@
                                 <span>апартаменты</span>
                                 <span>От 2000 Р.</span>
                             </p>
-                            <p>
+                            <p class="button-block">
                                 <a class="button-detailed" href="#">подробнее</a>
                                 <a class="button-booking" href="#">забронировать</a>
                             </p>
@@ -177,13 +191,13 @@
                     </a>
                 </li>
             </ul>
-            <p class="author">website by
-                <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss" alt="Интенсив Профессиональный HTML, CSS уровень 1">html academy</a>
+             <p class="author">website by
+
+                <a class="autor-link" href="https://htmlacademy.ru/intensive/htmlcss" alt="Интенсив Профессиональный HTML, CSS уровень 1"><img src="img/logo-htmlacademy.svg" width="115" height="40" alt="логотип html academy">
+                </a>
             </p>
         </footer>
     </div>
 </body>
 </html>
-    </div>
-</body>
-</html>
+
