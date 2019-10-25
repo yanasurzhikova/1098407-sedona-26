@@ -29,19 +29,19 @@
                         <legend class="filters-legend">Инфраструктура:</legend>
                         <ul class="filters-list">
                             <li class="filters-item">
-                                <input type="checkbox" name="pool" id="filter-pool" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                                 <label for="filter-pool">
                                 Бассейн
                                 </label>
                             </li>
                             <li class="filters-item">
-                                <input type="checkbox" name="parking" id="filter-parking">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
                                 <label for="filter-parking">
                                 Паркинг
                                 </label>
                             </li>
                             <li class="filters-item">
-                                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
                                 <label for="filter-wi-fi">
                                 Wi-fi
                                 </label>
@@ -52,19 +52,19 @@
                         <legend class="filters-legend">Тип жилья:</legend>
                         <ul class="filters-list">
                             <li class="filters-item">
-                                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
                                 <label for="filter-hotel">
                                 Гостиница
                                 </label>
                             </li>
                             <li class="filters-item">
-                                <input type="checkbox" name="motel" id="filter-motel" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
                                 <label for="filter-motel">
                                 Мотель
                                 </label>
                             </li>
                             <li class="filters-item">
-                                <input type="checkbox" name="apartment" id="filter-apartment" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
                                 <label for="filter-apartment">
                                 Апартаменты
                                 </label>
@@ -86,14 +86,12 @@
                         </div>
                         <button class="btn-transparent" type="submit">Показать</button>
                     </div>
-
                 </form>
             </section>
             <section class="hotels">
                  <div class="search-result">
                     <h2 class="hotels-title">Найдено: 3</h2>
                     <p class="hotels-title-sort">Сортировка:</p>
-
                     <ul class="sort-list">
                         <li class="sort-list-item">
                             <a class="sort-list-item-link current" href="#" >По цене</a>
@@ -110,7 +108,6 @@
                         <li class="sort-down"><a href="#"></a></li>
                     </ul>
                 </div>
-
                 <ul class="hotels-list">
                     <li class="hotels-list-item">
                         <img src="img/pic_hotels_1.jpg" width="135" height="90" alt="фото отеля Amara Resort & Spa">
@@ -128,7 +125,12 @@
                             </p>
                         </div>
                         <div class="rating">
-                            <p class="rating-stars rating-stars-4"></p>
+                            <div class="rating-stars">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                            </div>
                             <p class="rating-text">Рейтинг: 8,5</p>
                         </div>
                     </li>
@@ -148,7 +150,11 @@
                             </p>
                         </div>
                         <div class="rating">
-                            <p class="rating-stars rating-stars-3"></p>
+                            <div class="rating-stars">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                            </div>
                             <p class="rating-text">Рейтинг: 8,9</p>
                         </div>
                     </li>
@@ -168,32 +174,34 @@
                             </p>
                         </div>
                         <div class="rating">
-                            <p class="rating-stars rating-stars-2"></p>
+                            <div class="rating-stars">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></span>
+                            </div>
                             <p class="rating-text">Рейтинг: 9,2</p>
                         </div>
                     </li>
                 </ul>
             </section>
         </main>
-         <footer class="main-footer">
+        <footer class="main-footer">
             <b class="hashtag">#VISITSEDONA</b>
             <ul class="social">
                 <li class="social-icon">
-                    <a href="#" aria-label="Твиттер"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+                    <a class="social-link" href="#" aria-label="Твиттер"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
                     </a>
                 </li>
                 <li class="social-icon">
-                    <a href="#" aria-label="Фейсбук"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+                    <a class="social-link" href="#" aria-label="Фейсбук"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
                     </a>
                 </li>
                 <li class="social-icon">
-                    <a href="#" aria-label="Ютуб"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+                    <a class="social-link" href="#" aria-label="Ютуб"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
                     </a>
                 </li>
             </ul>
-             <p class="author">website by
-
-                <a class="autor-link" href="https://htmlacademy.ru/intensive/htmlcss" alt="Интенсив Профессиональный HTML, CSS уровень 1"><img src="img/logo-htmlacademy.svg" width="115" height="40" alt="логотип html academy">
+            <p class="author">website by
+                <a class="author-link" href="https://htmlacademy.ru/intensive/htmlcss" alt="Интенсив Профессиональный HTML, CSS уровень 1"><img src="img/logo-htmlacademy.svg" width="115" height="40" alt="логотип html academy">
                 </a>
             </p>
         </footer>
