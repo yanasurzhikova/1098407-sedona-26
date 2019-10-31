@@ -25,7 +25,7 @@ a {
 }
 
 .main-navigation {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
@@ -130,6 +130,10 @@ a {
   text-align: center;
 }
 
+.advantages {
+  padding-top: 60px;
+}
+
 .title-main {
   font-size: 21px;
   line-height: 26px;
@@ -137,7 +141,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 60px;
+  margin: 0px;
   margin-bottom: 39px;
 }
 
@@ -160,13 +164,17 @@ a {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+  margin: 0px;
   margin-bottom: 60px;
 }
 
 .advantages-item-single-block {
-  width: 100%;
+  width: 400px;
   min-height: 257px;
   background-color: #eeeeee;
+  padding-top: 50px;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .advantages-item-single-block {
@@ -181,7 +189,7 @@ a {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 46px;
+  margin: 0px;
   margin-bottom: 28px;
 }
 
@@ -191,19 +199,17 @@ a {
   color: #000000;
   font-weight: normal;
   text-transform: uppercase;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 65px;
-
+  margin: 0px;
 }
 
 .advantages-item-number {
+  display: block;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   font-weight: normal;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .advantages-item-dual {
@@ -221,6 +227,9 @@ a {
   min-height: 255px;
   background-color: #81b3d2;
   text-align: center;
+  padding-top: 46px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .pic-right {
@@ -251,15 +260,14 @@ a {
   min-height: 182px;
   margin: 0px;
   padding: 0px;
-  margin-left: 53px;
-  margin-right: 43px;
 }
 
 .feature-box {
+  width: 400px;
+  min-height: 330px;
   padding-top: 160px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 88px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .feature-item-title {
@@ -323,6 +331,7 @@ a {
 
 .booking {
   position: relative;
+  padding-top: 58px;
 }
 
 .booking-form {
@@ -358,9 +367,9 @@ a {
   height: 38px;
   box-sizing: border-box;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 8px;
   padding-right: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   font-size: 14px;
   line-height: auto;
   font-weight: bold;
@@ -384,8 +393,8 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 58px;
   margin: 0px;
+  margin-bottom: 36px;
 }
 
 .button-search {
@@ -409,9 +418,8 @@ a {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 36px;
-  padding-bottom: 53px;
   margin: 0px;
+  margin-bottom: 53px;
 }
 
 .map {
@@ -458,7 +466,12 @@ a {
   height: 38px;
   background: #f2f2f2;
   border: none;
+  font-size: 32px;
+  line-height: 1em;
+  font-weight: bold;
+  cursor: pointer;
 }
+
 .booking-form-wrap-people {
   display: flex;
   flex-direction: row;
@@ -497,6 +510,7 @@ a {
   width: 458px;
   min-height: 58px;
   border: none;
+  cursor: pointer;
 }
 
 .booking-form-button:hover {
@@ -916,44 +930,46 @@ a {
   margin-left: 10px;
 }
 
-.sort-up a {
+.sort-up span {
+  display: inline-block;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 10px solid #cacaca;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 11px solid #cacaca;
 }
 
-.sort-up a:current {
+.sort-up span:current {
   border-bottom: 10px solid #81b3d2;
 }
 
-.sort-up a:hover {
+.sort-up span:hover {
   border-bottom: 10px solid #231f20;
 }
 
-.sort-up a:active {
+.sort-up span:active {
   border-bottom: 10px solid #81b3d2;
 }
 
 
-.sort-down a {
+.sort-down span {
+  display: inline-block;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 11px solid #81b3d2;
+}
+
+.sort-down span.current {
   border-top: 10px solid #81b3d2;
 }
 
-.sort-down a:current {
-  border-top: 10px solid #81b3d2;
-}
-
-.sort-down a:hover {
+.sort-down span:hover {
   border-top: 10px solid #231f20;
 }
 
-.sort-down a:active {
+.sort-down span:active {
   border-top: 10px solid #81b3d2;
 }
 
@@ -1014,12 +1030,15 @@ a {
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+.price-controls .min-price {
+  width: 144px;
+  padding: 5px 0 0 41px;
 }
 
+.price-controls .max-price {
+  width: 155px;
+  padding: 5px 0 0 33px;
+}
 .price-controls input {
   width: 50px;
   margin: 0;
