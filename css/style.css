@@ -926,11 +926,11 @@ a {
   margin-left: auto;
 }
 
-.sort li {
+.sort-item {
   margin-left: 10px;
 }
 
-.sort-up span {
+.sort-item-up span {
   display: inline-block;
   width: 0;
   height: 0;
@@ -939,37 +939,37 @@ a {
   border-bottom: 11px solid #cacaca;
 }
 
-.sort-up span:current {
+.sort-item-up.current span {
   border-bottom: 10px solid #81b3d2;
 }
 
-.sort-up span:hover {
+.sort-item-up span:hover {
   border-bottom: 10px solid #231f20;
 }
 
-.sort-up span:active {
+.sort-item-up span:active {
   border-bottom: 10px solid #81b3d2;
 }
 
 
-.sort-down span {
+.sort-item-down span {
   display: inline-block;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 11px solid #81b3d2;
+  border-top: 11px solid #cacaca;
 }
 
-.sort-down span.current {
+.sort-item-down.current span {
   border-top: 10px solid #81b3d2;
 }
 
-.sort-down span:hover {
+.sort-item-down span:hover {
   border-top: 10px solid #231f20;
 }
 
-.sort-down span:active {
+.sort-item-down span:active {
   border-top: 10px solid #81b3d2;
 }
 
